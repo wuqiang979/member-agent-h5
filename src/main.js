@@ -11,8 +11,8 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 
-import { Button } from 'vant'
-Vue.use(Button)
+import { Button, NavBar, Toast, Tab, Tabs } from 'vant'
+Vue.use(Button).use(NavBar).use(Toast).use(Tab).use(Tabs)
 
 Vue.config.productionTip = false
 

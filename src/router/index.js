@@ -22,6 +22,16 @@ export default new Router({
       component: () => lazyLoadView(import('@/views/Login.vue'))
     },
     {
+      path: '/home',
+      name: 'home',
+      component: () => lazyLoadView(import('@/views/Home.vue'))
+    },
+    {
+      path: '/fans-list',
+      name: 'fansList',
+      component: () => lazyLoadView(import('@/views/FansList.vue'))
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

@@ -17,19 +17,34 @@
     <div class="login-in-box">
       <div class="phone">
         <img src="@/assets/images/phone.svg" alt="">
-        <input type="text" placeholder="输入手机号">
+        <input type="text" placeholder="请输入手机号">
       </div>
       <div class="code">
         <img src="@/assets/images/phone.svg" alt="">
-        <input type="text" placeholder="输入验证码">
+        <input type="text" placeholder="请输入验证码">
         <span class="get-code">获取验证码</span>
       </div>
       <div class="login-btn-box">
-        <van-button class="login-btn" round type="primary" size="large">登 录</van-button>
+        <van-button class="login-btn" round type="primary" size="large" @click="login">登 录</van-button>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+    login () {
+      this.$router.push('/home')
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .login-box {
   width: 100%;
@@ -69,17 +84,19 @@
       padding-bottom: px2rem(12);
       border-bottom: 2px solid $ft--color;
       img {
-        width: px2rem(26);
+        width: px2rem(30);
       }
       input {
         outline: none;
         border: none;
         font-size: px2rem(28);
-        margin-left: px2rem(26);
+        margin-left: px2rem(20);
+        // background: yellow;
         &::placeholder {
           color: #2f2e41;
-          font-size: px2rem(24);
+          font-size: px2rem(28);
           color: $cp;
+          line-height: px2rem(40);
         }
       }
       &.code {

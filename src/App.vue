@@ -13,6 +13,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted () {
+
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -20,7 +28,7 @@
   -moz-osx-font-smoothing: grayscale;
   color: #333;
   font-size: px2rem(28);
-  position: relative;
+  position: relative;;
   max-width: 1200px;
   margin: 0 auto;
 }
